@@ -1,19 +1,11 @@
-import java.io.*;
 
 public class Main {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
 
-        //Объявление переменных payed - ввод заплаченный суммы; check - количество рублей для одной бонусной мили
-
-        System.out.println("Введите заплаченную сумму:");
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        String tmp = reader.readLine();
-
-        int payed = Integer.parseInt(tmp);
-        int check = 20;
+        int payed = 4506; //заплаченная сумма
+        int check = 20; //количество рублей для одной бонусной мили
 
         //Расчет бонусных миль и вывод результата на экран
-
         int bonus = payed / check;
         System.out.println("Добавлено бонусных миль: " + bonus);
     }
